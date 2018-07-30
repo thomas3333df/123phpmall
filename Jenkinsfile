@@ -1,13 +1,11 @@
-node('NEW_BONSAI_SLAVE') {
-
-    checkout scm
-
-    dir('backend') {
-        stage('Deploy') {
-            sh """
-            COPY C:\code\123phpmall\hell.py C:\code\123phpmall-deploy\
-            """
-        }
-  
+node {
+    stage('Build') {
+        echo 'Building....'
+    }
+    stage('Test') {
+        echo 'Building....'
+    }
+    stage('Deploy') {
+            echo 'Building....'
     }
 }
